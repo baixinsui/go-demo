@@ -12,6 +12,7 @@ import "time"
 简写形如下：
 */
 import (
+	"baixinsui/go-demo/basics"
 	"fmt"
 	"time"
 )
@@ -31,4 +32,19 @@ func main() {
 	// 格式化输出
 	fmt.Printf("Today is:%s\n", time.Now().Format(time.DateOnly))
 	fmt.Printf("NowTime is:%s\n", time.Now().Format(time.TimeOnly))
+
+	// 输入输出测试
+	basics.InputOutput()
+	// 变量测试
+	fmt.Printf("var Age in basics: %d\n", basics.Age)
+	fmt.Printf("var Lang in basics: %s\n", basics.Lang)
+	basics.VarTest()
+	basics.VarTest2()
+	basics.VarTest3()
+	// 常量测试
+	fmt.Printf("const AGE in basics: %d\n", basics.AGE)
+	fmt.Printf("const LANG in basics: %s\n", basics.LANG)
+	basics.ConstTest()
+	basics.ConstTest2()
+	basics.ConstTest3()
 }
