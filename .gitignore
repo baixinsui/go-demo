@@ -1,0 +1,9 @@
+*.dll
+*.exe
+bin/
+pkg/
+*.log
+.idea
+.vscode
+*.iml
+*.test
