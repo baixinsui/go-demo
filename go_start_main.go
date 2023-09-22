@@ -12,8 +12,8 @@ import "time"
 简写形如下：
 */
 import (
-	"baixinsui/go-demo/basics"
 	"fmt"
+	"go-demo/basics"
 	"time"
 )
 
@@ -26,15 +26,13 @@ main函数为程序启动入口
 编码默认一行为一句, 当一行写入多条语句，需要人为使用;隔开
 */
 func main() {
-
 	// 标准输出
 	fmt.Println("Hello, Welcome to Go world!")
 	// 格式化输出
 	fmt.Printf("Today is:%s\n", time.Now().Format(time.DateOnly))
 	fmt.Printf("NowTime is:%s\n", time.Now().Format(time.TimeOnly))
-
 	// 输入输出测试
-	basics.InputOutput()
+	//basics.InputOutput()
 	// 变量测试
 	fmt.Printf("var Age in basics: %d\n", basics.Age)
 	fmt.Printf("var Lang in basics: %s\n", basics.Lang)
@@ -47,4 +45,16 @@ func main() {
 	basics.ConstTest()
 	basics.ConstTest2()
 	basics.ConstTest3()
+	// 类型测试
+	fmt.Printf("AbsoluteZeroC:%2.f\n", basics.AbsoluteZeroC)
+	var tempC = basics.AbsoluteZeroC
+	var f = float64(tempC)
+	fmt.Println(f == float64(tempC))
+	fmt.Println(0 <= float64(tempC))
+	fmt.Printf("tempC to f:%.2f\n", f)
+	var tempF = basics.CToF(tempC)
+	fmt.Printf("AbsoluteZeroC to tempF:%.2f\n", tempF)
+	var tempC0 = basics.FToC(0)
+	fmt.Printf("tempF0 to tempC0:%.2f\n", tempC0)
+
 }
