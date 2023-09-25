@@ -31,6 +31,7 @@ func main() {
 	// 格式化输出
 	fmt.Printf("Today is:%s\n", time.Now().Format(time.DateOnly))
 	fmt.Printf("NowTime is:%s\n", time.Now().Format(time.TimeOnly))
+	fmt.Printf("NowTime is:%s\n", time.Now().Format("2006-01-02 15:04:05.000"))
 	// 输入输出测试
 	//basics.InputOutput()
 	// 变量测试
@@ -56,5 +57,10 @@ func main() {
 	fmt.Printf("AbsoluteZeroC to tempF:%.2f\n", tempF)
 	var tempC0 = basics.FToC(0)
 	fmt.Printf("tempF0 to tempC0:%.2f\n", tempC0)
+
+	//运算符测试
+	basics.MathOperator()
+	basics.LogicOperator()
+	basics.RelationalOperator()
 
 }

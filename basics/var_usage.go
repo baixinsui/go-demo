@@ -7,6 +7,11 @@ var Lang = "English"
 // Age 声明变量并初始化赋值
 var Age int = 20
 
+var ( // 这种因式分解关键字的写法一般用于声明全局变量
+	name string
+	age  int
+)
+
 func VarTest() {
 	// 声明变量
 	var name string
