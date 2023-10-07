@@ -71,20 +71,17 @@ func main() {
 	basics.FuncUsage()
 
 	// 派生类型， 除bool、number(int,float)、string等基本类型外，都是派生类型，包含以下类型：
-	//(a) 指针类型（Pointer）
-	//(b) 数组类型
-	//(c) 结构化类型(struct)
-	//(d) Channel 类型
-	//(e) 函数类型
-	//(f) 切片类型
-	//(g) 接口类型（interface）
-	//(h) Map 类型
-
-	// 指针用法
+	// 指针类型(Pointer)
 	basics.PointerUsage()
-	// 数组用法
+	// 数组类型(array)
 	basics.ArrayUsage()
-	//(c) 结构化类型(struct)
+	// 切片类型 (slice)
+	basics.SliceUsage()
+	// 结构化类型(struct)
 	basics.StructUsage()
+	// Map类型(map)
+	// Channel类型 (chan)
+	// 函数类型(func)
+	// 接口类型(interface)
 
 }
