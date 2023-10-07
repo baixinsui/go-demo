@@ -63,4 +63,10 @@ func main() {
 	basics.LogicOperator()
 	basics.RelationalOperator()
 
+	//条件语句测试
+	basics.SwitchTest()
+	basics.IfElseTest()
+
+	//
+
 }
