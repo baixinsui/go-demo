@@ -64,12 +64,15 @@ func main() {
 	basics.RelationalOperator()
 
 	//条件语句测试
-	basics.SwitchTest()
-	basics.IfElseTest()
+	//basics.SwitchTest()
+	//basics.IfElseTest()
 
 	//函数测试
 	basics.FuncUsage()
 	// 数组用法
 	basics.ArrayUsage()
+
+	// 指针用法
+	basics.PointerUsage()
 
 }
