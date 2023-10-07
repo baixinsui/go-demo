@@ -67,6 +67,7 @@ func main() {
 	basics.SwitchTest()
 	basics.IfElseTest()
 
-	//
+	//函数测试
+	basics.FuncUsage()
 
 }
