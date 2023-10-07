@@ -80,6 +80,7 @@ func main() {
 	// 结构化类型(struct)
 	basics.StructUsage()
 	// Map类型(map)
+	basics.MapUsage()
 	// Channel类型 (chan)
 	// 函数类型(func)
 	// 接口类型(interface)

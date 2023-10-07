@@ -28,7 +28,6 @@ func VarTest() {
 	PrintInfo(name, age, isMarried, weight, Lang)
 }
 
-// VarTest2
 func VarTest2() {
 	// 短变量赋值,只能用在函数内
 	name := "Tom2"

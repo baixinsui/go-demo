@@ -40,4 +40,9 @@ func SliceUsage() {
 	/*将slice1 复制到 slice4 ,从slice1下标0到结束一一复制，slice4其余初始长度下表元素为默认空值*/
 	copy(slice4, slice1)
 	fmt.Printf("slice4: %v, capacity of slice4: %d, length of slice4: %d\n", slice4, cap(slice4), len(slice4))
+
+	slice5 := make([]int, len(slice1)*2, (cap(slice1))*2)
+	/*将slice 复制到 slice5 ,从slice下标0到结束一一复制，slice5其余初始长度下表元素为默认空值*/
+	copy(slice5, slice)
+	fmt.Printf("slice5: %v, capacity of slice5: %d, length of slice5: %d\n", slice5, cap(slice5), len(slice5))
 }
