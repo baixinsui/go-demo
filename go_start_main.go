@@ -69,5 +69,7 @@ func main() {
 
 	//函数测试
 	basics.FuncUsage()
+	// 数组用法
+	basics.ArrayUsage()
 
 }
